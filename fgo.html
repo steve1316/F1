@@ -252,7 +252,7 @@
           preLoadImg(img_logo, logo)
         ];
         Promise.all(promiseAll).then(function () {
-          content.drawImage(img_hero,0,0,500,730);
+          content.drawImage(img_hero,0,100,500,730);
           content.drawImage(img_frame,0,0,500,850);
           content.drawImage(img_logo,icon_pos[Hero_class][0], icon_pos[Hero_class][1],76,76);
           Hero_class = Hero_class.slice(0, 1).toUpperCase() + Hero_class.slice(1);
