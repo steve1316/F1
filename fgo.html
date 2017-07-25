@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -158,14 +159,14 @@
 		content.lineTo(400,y[1]);
 		content.lineWidth = 2;
 		content.stroke();
-		
+      
 		content.font = "22px FGO";
 		content.strokeStyle = "black";
 		content.lineWidth = 3;
 		content.strokeText(Hero_name,250,y[2]);
 		content.fillStyle = "white";
 		content.fillText(Hero_name,250,y[2]);
-		
+      
 		content.font = "50px FGO";
 		content.strokeStyle = "black";
 		content.strokeText(ATK,130,y[3]);
@@ -252,17 +253,9 @@
 				img_logo.onload = function() 
 				{
 					content.drawImage(img_logo,...icon_pos[Hero_class],76,76);
-					if(Hero_class = "Debug DeBug")
-					{
-						Hero_class = document.getElementById("Hero_subname").value || Hero_class;
-						put_text(canvas, content, Hero_class, Hero_name, false);
-					}
-					else
-					{
-						Hero_class = Hero_class.slice(0, 1).toUpperCase() + Hero_class.slice(1);
-						Hero_class = document.getElementById("Hero_subname").value || Hero_class;
-						put_text(canvas, content, Hero_class, Hero_name, false);
-					}
+					Hero_class = Hero_class.slice(0, 1).toUpperCase() + Hero_class.slice(1);
+					Hero_class = document.getElementById("Hero_subname").value || Hero_class;
+					put_text(canvas, content, Hero_class, Hero_name, false);
 				};
 			}
 		} 
@@ -347,7 +340,6 @@
 				<option value = "alterego">Alter Ego</option>
 				<option value = "shielder">Shielder</option>
 				<option value = "all">Misc</option>
-				<option value = "Debug DeBug">debugging</option>
 			</select><br><br>
 		</div>
     </div>
@@ -357,7 +349,7 @@
     <br>
     <a href = "#Canvas-position"><button onclick = "get_pic('myCanvas')">Generate!</button></a>
     <br>
-    <p style = "font-size: 10pt">Tips: For best result, please use image size of 730 x 500！1</p>
+    <p style = "font-size: 10pt">Tips: For best result, please use image size of 730 x 500！</p>
     <!--两个例子：
     <a href = "#Canvas-position"><button onclick = "get_zhou()">生成周天王！</button></a>
     <a href = "#Canvas-position"><button onclick = "get_lei()">生成蕾姆！</button></a> -->
