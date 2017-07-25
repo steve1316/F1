@@ -238,7 +238,7 @@
 			preLoadImg(img_frame.src);
 			img_frame.onload = function()
 			{
-				content.drawImage(img_hero,0,50,500,730);
+				content.drawImage(img_hero,0,30,500,705);
 				content.drawImage(img_frame,0,0,500,850);
 				const icon_pos = 
 				{
@@ -273,7 +273,7 @@
 			preLoadImg(img_frame.src);
 			img_frame.onload = function()
 			{
-				content.drawImage(img_hero,0,0,500,500);
+				content.drawImage(img_hero,0,0,500,850);
 				content.drawImage(img_frame,0,0,500,850);
 				put_text(canvas, content, Hero_name, Hero_class, true);
 			}
@@ -298,7 +298,8 @@
 <body onresize = "resize()">
 <div id = "main-container" >
     <div style = "font-size: 35px; text-align: center; color: green">FGO Card Generator</div> 
-    <div style = "text-align: center; font-size: 15px; padding-bottom: 20px">Original Code by juncaixinchi<br>Expanded by Aister</div>
+    <div style = "text-align: center; font-size: 15px; padding-bottom: 20px">Original Code by juncaixinchi<a href="https://juncaixinchi.github.io/FGO/fgo.html"> here</a><br>Expanded by Aister<a href="https://aister.github.io/FGO/fgo.html"> here</a> and edited by steve1316
+ -    <br>because I was annoyed at very minor differences in the generated card image</div>
     Rarity<br><br>
     <select id = "Hero_rarity" style = "max-width:250px; width: 100%">
 		<option value = "0">0 ☆</option>
@@ -325,7 +326,7 @@
 			<input type = "text" id = "CE_subname" placeholder = "Class Name" style = "max-width:250px; width: 100%"><br><br>
 		</div>
 		<div>
-			Number Color<br><br>
+			Number Color (non Foued vs. Foued)<br><br>
 			<input id="gold" class="toggle" checked="checked" type="checkbox" value="1">
 			<label for="gold" data-on="White (Click to switch)" data-off="Gold (Click to switch)"></label>
 			Name<br><br>
@@ -355,7 +356,7 @@
     <br>
     <a href = "#Canvas-position"><button onclick = "get_pic('myCanvas')">Generate!</button></a>
     <br>
-    <p style = "font-size: 10pt">Tips: For best result, please use image size of 730 x 500！steve1316 2</p>
+    <p style = "font-size: 10pt">Tips: For best result, please use image size of 730 x 500！</p>
     <!--两个例子：
     <a href = "#Canvas-position"><button onclick = "get_zhou()">生成周天王！</button></a>
     <a href = "#Canvas-position"><button onclick = "get_lei()">生成蕾姆！</button></a> -->
