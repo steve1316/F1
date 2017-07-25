@@ -242,7 +242,7 @@
         preLoadImg(img_frame.src);
         img_frame.onload = function()
         {
-          content.drawImage(img_hero,0,0,500,850);
+          content.drawImage(img_hero,0,-100,500,850);
           content.drawImage(img_frame,0,0,500,850);
           put_text(canvas, content, Hero_name, Hero_class, true);
         }
