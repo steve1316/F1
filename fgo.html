@@ -218,11 +218,7 @@
 		{
 			let Hero_class = document.getElementById("Hero_class").value || "all";
 			const Hero_name = document.getElementById("Hero_name").value || "Unknown";
-			if (Hero_rarity == 0)
-			{
-				
-			}
-			else if (Hero_rarity == 1 || Hero_rarity == 2) 
+			if (Hero_rarity == 1 || Hero_rarity == 2) 
 			{
 				img_logo.src = "img/fgo/" + Hero_class + "1.png";
 			} 
@@ -302,7 +298,6 @@
  -    <br>because I was annoyed at very minor differences in the generated card image</div>
     Rarity<br><br>
     <select id = "Hero_rarity" style = "max-width:250px; width: 100%">
-		<option value = "0">0 ☆</option>
 		<option value = "1">1 ☆</option>
 		<option value = "2">2 ☆</option>
 		<option value = "3">3 ☆</option>
