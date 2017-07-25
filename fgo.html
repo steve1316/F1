@@ -159,7 +159,12 @@
 		content.lineWidth = 2;
 		content.stroke();
 		
-		
+		content.font = "22px FGO";
+		content.strokeStyle = "black";
+		content.lineWidth = 3;
+		content.strokeText(Hero_name,250,y[2]);
+		content.fillStyle = "white";
+		content.fillText(Hero_name,250,y[2]);
 		
 		content.font = "50px FGO";
 		content.strokeStyle = "black";
@@ -247,9 +252,8 @@
 				img_logo.onload = function() 
 				{
 					content.drawImage(img_logo,...icon_pos[Hero_class],76,76);
-					if(Hero_class = "alterego")
+					if(Hero_class = "Debug DeBug")
 					{
-						Hero_class = "Alter Ego";
 						Hero_class = document.getElementById("Hero_subname").value || Hero_class;
 						put_text(canvas, content, Hero_class, Hero_name, false);
 					}
@@ -270,14 +274,8 @@
 			preLoadImg(img_frame.src);
 			img_frame.onload = function()
 			{
-				var line = new Image();
 				content.drawImage(img_hero,0,0,500,850);
 				content.drawImage(img_frame,0,0,500,850);
-				line.onload = function ()
-				{
-					content.drawImage(line, 100, 100);
-				}
-				line.src = "img/fgo/line.png";
 				put_text(canvas, content, Hero_name, Hero_class, true);
 			}
 		}
@@ -349,6 +347,7 @@
 				<option value = "alterego">Alter Ego</option>
 				<option value = "shielder">Shielder</option>
 				<option value = "all">Misc</option>
+				<option value = "Debug DeBug">debugging</option>
 			</select><br><br>
 		</div>
     </div>
